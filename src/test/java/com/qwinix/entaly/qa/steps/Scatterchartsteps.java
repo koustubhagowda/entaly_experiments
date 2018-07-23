@@ -16,11 +16,11 @@ public class Scatterchartsteps {
 		
 		public void getdata_scatter_chart() throws InterruptedException {
 
-		
+	 	driver.manage().window().maximize();
 		driver.get("https://www.amcharts.com/demos/scatter-chart");
 		Thread.sleep(3000);
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
-		jse.executeScript("window.scrollBy(0,500)", "");
+		jse.executeScript("window.scrollBy(0,300)", "");
 		int size = driver.findElements(By.xpath("//*[name()='svg']/*[name()='g'][12]/*[name()='g'][1]/*[name()='path']")).size();
 		Thread.sleep(3000);
 		System.out.println(size);
