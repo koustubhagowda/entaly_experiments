@@ -10,12 +10,12 @@ Then I should albe to fetch all the data in bubble chart
 
 @scatter_chart
 Scenario: trying to fetch all the data
-Given Iam on home page
+Given Iam on sactter home page
 When I navigate to sactter chart
 Then I should able to fetch all data in scatter chart
 
 @funnel_chart
 Scenario: trying to fetch all the data
-Given Iam on home page
+Given Iam on funnel home page
 When I navigate to funnel chart
 Then I should able to fetch all data in funnel chart

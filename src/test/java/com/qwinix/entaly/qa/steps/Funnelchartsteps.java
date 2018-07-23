@@ -18,11 +18,11 @@ public class Funnelchartsteps {
 		
 		
 		public void getdata_funnel_chart() throws InterruptedException {
-			
+	 		driver.manage().window().maximize();
 			driver.get("https://www.amcharts.com/demos/funnel-chart");
 			Thread.sleep(3000);
 			JavascriptExecutor jse = (JavascriptExecutor)driver;
-			jse.executeScript("window.scrollBy(0,500)", "");
+			jse.executeScript("window.scrollBy(0,300)", "");
 			int size = driver.findElements(By.xpath("//*[name()='svg']/*[name()='g'][7]/*[name()='g']/*[name()='text']")).size();
 			Thread.sleep(3000);
 			System.out.println(size);
