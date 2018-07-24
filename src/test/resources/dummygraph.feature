@@ -19,3 +19,9 @@ Scenario: trying to fetch all the data
 Given Iam on funnel home page
 When I navigate to funnel chart
 Then I should able to fetch all data in funnel chart
+
+@sunbrust_chart
+Scenario: trying to fetch all the data
+Given Iam on sunbrust homepage
+When I navigate to sunbrust page
+Then I should able to fetch all data in sunbrust page
