@@ -39,7 +39,7 @@ public class UserSteps
   	//Dashboard verify
   	public void Pageverify() throws InterruptedException
   	{
-//  		LoginObj.verify.getText();
+  		LoginObj.verify.getText();
   	}
     	
 }

@@ -20,12 +20,11 @@ public class LoginPage
 	@FindBy(xpath="//span[contains(text(),'Log In')]")
 	public WebElement sign_in;
 	
-//	@FindBy(xpath="//h3[contains(text(),'Repositories and Commits:')]")
-//	public WebElement verify;
+	@FindBy(xpath="//h3[contains(text(),'Repositories and Commits:')]")
+	public WebElement verify;
 	
 	public LoginPage()
 	{
 		PageFactory.initElements(StepsDefinitions.driver,this);
 	}
-
 }
