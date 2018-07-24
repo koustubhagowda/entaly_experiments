@@ -27,5 +27,4 @@ public class LoginPage
 	{
 		PageFactory.initElements(StepsDefinitions.driver,this);
 	}
-
 }
