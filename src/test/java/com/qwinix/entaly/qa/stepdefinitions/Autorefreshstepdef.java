@@ -11,8 +11,8 @@ public class Autorefreshstepdef {
 	Autorefreshstep objAS = new Autorefreshstep();
 	
 
-	@Given("^Iam on dashboard homepage$")
-	public void iam_on_dashboard_homepage() throws Throwable {
+	@Given("^Iam on dashboard autorefresh button page$")
+	public void iam_on_dashboard_autorefresh_button_page() throws Throwable {
 		objAS.openurl();
 	}
 
@@ -25,7 +25,4 @@ public class Autorefreshstepdef {
 	public void i_should_see_the_homepage_is_automaticaly_update_the_information() throws Throwable {
 		objAS.autorefresh_click();
 	}
-
-
-
 }

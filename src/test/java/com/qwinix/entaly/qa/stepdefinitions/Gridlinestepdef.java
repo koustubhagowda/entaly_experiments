@@ -9,8 +9,9 @@ import cucumber.api.java.en.When;
 public class Gridlinestepdef {
 	Gridlinestep objGS = new Gridlinestep();
 	
-	@Given("^Iam on dashboard gridlinepage$")
-	public void iam_on_dashboard_gridlinepage() throws Throwable {
+	
+	@Given("^Iam on dashboard gridline page$")
+	public void iam_on_dashboard_gridline_page() throws Throwable {
 		objGS.openurl();
 	}
 
@@ -23,6 +24,7 @@ public class Gridlinestepdef {
 	public void i_should_see_the_current_page() throws Throwable {
 	  
 	}
+
 
 
 
