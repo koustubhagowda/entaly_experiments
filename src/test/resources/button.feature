@@ -26,3 +26,9 @@ Given Iam on drag and drop page
 When I drag the image from image floder to trash
 Then I should see the image in the Trash
 
+@color_text
+Scenario: verify the color of the text
+Given Iam on  color text page
+When I verify the particular color of the text
+Then I should see the specified color
+
