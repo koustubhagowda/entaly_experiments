@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = {"src/test/resources"},tags = {"@map"},
+		features = {"src/test/resources"},tags = {"@Button"},
 		glue = {"com.qwinix.entaly.qa"},
 		plugin = {"pretty",
 				"html:target/cucumber-html-report"}
