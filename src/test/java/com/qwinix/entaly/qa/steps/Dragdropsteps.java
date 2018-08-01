@@ -13,24 +13,21 @@ public class Dragdropsteps {
 	
 	public void openurl() throws InterruptedException {
 		driver.manage().window().maximize();
-		driver.get("http://www.globalsqa.com/demo-site/draganddrop/");
+		driver.get("http://www.seleniumeasy.com/test/drag-and-drop-demo.html");
 		Thread.sleep(3000);
 	}
 	
 	public void draganddrop() throws InterruptedException {
-		driver.manage().window().maximize();
-		driver.get("http://www.globalsqa.com/demo-site/draganddrop/");
-		Thread.sleep(3000);
-	    WebElement fromElement= driver.findElement(By.xpath("//div[1]/ul/li[1]"));
-		Thread.sleep(3000);
-	    WebElement toElement=driver.findElement(By.xpath("//div[1]/div"));
-		Thread.sleep(3000);
-	    Actions action = new Actions(StepsDefinitions.driver);
-		Thread.sleep(3000);
-	    Action dragDrop = action.dragAndDrop(fromElement, toElement).build();
-		Thread.sleep(3000);
-	    dragDrop.perform(); 
-	    Thread.sleep(6000);
+	  
+	    WebElement From = driver.findElement(By.xpath("//span[text()='Draggable 1']"));
+	    WebElement To = driver.findElement(By.xpath("//*[@id='mydropzone']"));
+	    Actions builder = new Actions(driver);
+	    Action dragAndDrop = builder.clickAndHold(From)
+	    .moveToElement(To)
+	    .release(To)
+	    .build();
+	    dragAndDrop.perform();
+	    Thread.sleep(3000);
 }
 
 }
