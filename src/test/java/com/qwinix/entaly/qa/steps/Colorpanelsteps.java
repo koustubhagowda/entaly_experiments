@@ -16,7 +16,8 @@ public class Colorpanelsteps {
 	
 	public void openurl() throws InterruptedException {
 		driver.manage().window().maximize();
-		driver.get("https://demos.telerik.com/kendo-ui/colorpicker/index");
+//		driver.get("https://demos.telerik.com/kendo-ui/colorpicker/index");
+		driver.get("https://www.w3schools.com/colors/colors_picker.asp");
 		Thread.sleep(4000);
 		}
 
@@ -45,8 +46,10 @@ public class Colorpanelsteps {
 		    Assert.assertEquals(hex, hex1);
 		} catch (AssertionError e) {
 		    System.out.println("Not equal");
+		throw e;
 		}
 		System.out.println("Equal");
+		
 	}
 
 }
