@@ -32,7 +32,7 @@ public class ZoominAndzoomoutsteps {
 		WebElement we =	driver.findElement(By.xpath("//*[name()='svg']/*[name()='g'][1]/*[name()='g'][1]/*[name()='g']/*[name()='path'][213]"));
 		Actions action = new Actions(StepsDefinitions.driver);
 		action.moveToElement(we).perform();
-		String text =  driver.findElement(By.xpath("//*[name()='svg']/*[name()='g'][6]/*[name()='text'][2]")).getText();
+		String text =  driver.findElement(By.xpath("//*[name()='svg']/*[name()='g'][6]/*[name()='text']")).getText();
 	  	System.out.println(text);
 		
 		
