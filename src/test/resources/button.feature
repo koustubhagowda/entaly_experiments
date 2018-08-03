@@ -31,8 +31,16 @@ Scenario: verify the color of the text
 Given Iam on  color text page
 When I verify the particular color of the text
 Then I should see the specified color
+
 @color_pannel
 Scenario: trying to change the color of the graph
 Given Iam on color pannel page
 When I choose the color set
 Then I should see the specified color set in graph
+
+
+@zoomin_zoomout
+Scenario: trying to check the zoom in and zoomout views
+Given Iam on zoomin/zoomout page 
+When I click zoomin/zoomout button 
+Then  I should see the zoomin/zoomout views
