@@ -1,7 +1,6 @@
 @Button
 Feature: As a enduser
 I should able to check the button enable or disbled
-
 @undo_button
 Scenario:trying to check buton enable or disabled
 Given Iam on dashboard undo button page 
@@ -37,7 +36,6 @@ Scenario: trying to change the color of the graph
 Given Iam on color pannel page
 When I choose the color set
 Then I should see the specified color set in graph
-
 
 @zoomin_zoomout
 Scenario: trying to check the zoom in and zoomout views

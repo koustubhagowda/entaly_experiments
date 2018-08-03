@@ -23,6 +23,4 @@ public class ZoominAndzoomoutstepdef {
 	public void i_should_see_the_zoomin_zoomout_views() throws Throwable {
 	    
 	}
-
-
 }
