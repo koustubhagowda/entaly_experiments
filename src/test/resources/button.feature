@@ -38,7 +38,6 @@ Scenario:trying to check buton enable or disabled
 Given Iam on dashboard gridline page
 When I check the gridline button is disbaled 
 Then I should see the current page
->>>>>>> 7d8f61bd269d79072548653caedd1fe9ab42f923
 
 @dragAnddrop
 Scenario: trying to drag the image from floder to trash
