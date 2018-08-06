@@ -62,3 +62,8 @@ Scenario: trying to check the zoom in and zoomout views
 Given Iam on zoomin/zoomout page 
 When I click zoomin/zoomout button 
 Then  I should see the zoomin/zoomout views
+@Resize_graph
+Scenario: trying to check the resize function
+Given Iam resize page
+When I click resize button
+Then I should see the size of the widget
