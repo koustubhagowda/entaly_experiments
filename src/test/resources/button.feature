@@ -1,3 +1,26 @@
+@Button
+Feature: As a enduser
+I should able to check the button enable or disbled
+
+
+#@undo_button
+#Scenario:trying to check buton enable or disabled
+#Given Iam on dashboard undo button page 
+#When I click undo button 
+#Then I should see the pervious action
+#
+#@Autorefresh_button
+#Scenario:trying to check buton enable or disabled
+#Given Iam on dashboard autorefresh button page
+#When I click on autorefresh button
+#Then I should see the homepage is automaticaly update the information
+#
+#@gridline_enabel_or_disbale
+#Scenario:trying to check buton enable or disabled
+#Given Iam on dashboard gridline page
+#When I check the gridline button is disbaled 
+#Then I should see the current page
+
 @undo_button
 Scenario:trying to check buton enable or disabled
 Given Iam on dashboard undo button page 
@@ -39,7 +62,6 @@ Scenario: trying to check the zoom in and zoomout views
 Given Iam on zoomin/zoomout page 
 When I click zoomin/zoomout button 
 Then  I should see the zoomin/zoomout views
-
 @Resize_graph
 Scenario: trying to check the resize function
 Given Iam resize page
