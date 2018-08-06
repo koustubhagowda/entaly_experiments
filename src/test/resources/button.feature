@@ -1,6 +1,7 @@
 @Button
 Feature: As a enduser
 I should able to check the button enable or disbled
+
 @undo_button
 Scenario:trying to check buton enable or disabled
 Given Iam on dashboard undo button page 
@@ -41,4 +42,9 @@ Then I should see the specified color set in graph
 Scenario: trying to check the zoom in and zoomout views
 Given Iam on zoomin/zoomout page 
 When I click zoomin/zoomout button 
-Then  I should see the zoomin/zoomout views
+
+@Resize_graph
+Scenario: trying to check the resize function
+Given Iam resize page
+When I click resize button
+Then I should see the size of the widget
