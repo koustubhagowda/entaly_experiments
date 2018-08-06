@@ -2,7 +2,6 @@
 Feature: As a enduser
 I should able to check the button enable or disbled
 
-
 #@undo_button
 #Scenario:trying to check buton enable or disabled
 #Given Iam on dashboard undo button page 
@@ -62,8 +61,22 @@ Scenario: trying to check the zoom in and zoomout views
 Given Iam on zoomin/zoomout page 
 When I click zoomin/zoomout button 
 Then  I should see the zoomin/zoomout views
+
 @Resize_graph
 Scenario: trying to check the resize function
 Given Iam resize page
 When I click resize button
 Then I should see the size of the widget
+
+@play_pause
+Scenario: trying to check the functionality of play and pause
+Given Iam on play and pause homepage
+When I click play and pause
+Then I should see the play and pause function
+
+@line_grpah
+Scenario: trying to fetch all the data in graph
+Given Iam on linepage
+When I navigate the line chart
+Then I should fetch all data
+
