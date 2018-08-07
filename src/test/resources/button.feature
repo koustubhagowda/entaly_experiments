@@ -1,9 +1,6 @@
 @Button
 Feature: As a enduser
 I should able to check the button enable or disbled
-@Button
-Feature: As a enduser
-I should able to check the button enable or disbled
 
 
 #@undo_button
